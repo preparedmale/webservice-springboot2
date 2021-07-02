@@ -2,6 +2,7 @@ package com.preparedmale.lab.springboot.config.auth;
 
 import com.preparedmale.lab.springboot.domain.user.User;
 import com.preparedmale.lab.springboot.domain.user.UserRepository;
+import com.preparedmale.lab.springboot.web.dto.OAuthAttributes;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.oauth2.client.userinfo.DefaultOAuth2UserService;
