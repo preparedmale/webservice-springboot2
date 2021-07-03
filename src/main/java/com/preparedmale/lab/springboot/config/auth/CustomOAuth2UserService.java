@@ -1,5 +1,6 @@
 package com.preparedmale.lab.springboot.config.auth;
 
+import com.preparedmale.lab.springboot.config.auth.dto.SessionUser;
 import com.preparedmale.lab.springboot.domain.user.User;
 import com.preparedmale.lab.springboot.domain.user.UserRepository;
 import com.preparedmale.lab.springboot.web.dto.OAuthAttributes;
@@ -21,7 +22,6 @@ import java.util.Collections;
 public class CustomOAuth2UserService implements OAuth2UserService<OAuth2UserRequest, OAuth2User> {
     private final UserRepository userRepository;
     private final HttpSession httpSession;
-
 
     @Override
     public OAuth2User loadUser(OAuth2UserRequest userRequest) throws OAuth2AuthenticationException {
